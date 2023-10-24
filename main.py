@@ -190,29 +190,41 @@ This is the main function and it runs the entire program.
             print("Invalid name")
 
     # Now we are going to convert masses
-    time.sleep(4)
+    time.sleep(2)
     keep_running = 0
     while keep_running == 0:
         time.sleep(2)
         try:
-            choice_of_conversion = str(input("type the number of the "
-                                             "correspondent  conversion you "
-                                             "want to make: \n(1) - Kilogram "
-                                             "to Pounds/Ounces \n(2) - Pounds "
-                                             "to Kilograms/Ounces \n(3) - "
-                                             "Fahrenheit to Celsius/Kelvin"
-                                             "\n(4) - Celsius to"
-                                             " Fahrenheit/Kelvin \n(5) - "
-                                             "Meters / Foot \n(6) - Area / "
-                                             "Circumference / Volume \n(7) -"
-                                             " Remainder / Hole number"
-                                             " Division / Actual Division "
-                                             "\n(8) - Adding Calculator \n(9) "
-                                             "- Average Calculator \n(0) - "
-                                             "'or, and, not \n(!) To stop the "
-                                             "program\n"))
+            choice_of_conversion = str(input("=" * 69 + "\n\n\t\t*** Program Menu ***\n\n\n"
+                                             "\t(1) - Kilogram to Pounds/Ounces \n"
+                                             "\t(2) - Pounds to Kilograms/Ounces \n"
+                                             "\t(3) - Fahrenheit to Celsius/Kelvin\n"
+                                             "\t(4) - Celsius to Fahrenheit/Kelvin \n"
+                                             "\t(5) - Meters / Foot \n"
+                                             "\t(6) - Area / Circumference / Volume \n"
+                                             "\t(7) - Remainder / Hole number Division / Actual Division \n"
+                                             "\t(8) - Adding Calculator \n"
+                                             "\t(9) - Average Calculator \n"
+                                             "\t(0) - 'or, and, not \n"
+                                             "\t(!) To stop the program\n"
+                                             "Type the number of the correspondent  conversion you want to make: "))
         except TypeError:
             print("Invalid value. Try again.")
+
+            # intro = "\t*** Program Menu ***\n"
+            # catalog = "\t(1) - addition.\n" \
+            #           "\t(2) - subtraction.\n" \
+            #           "\t(3) - multiplication.\n" \
+            #           "\t(4) - division.\n" \
+            #           "\t(5) - percentage.\n" \
+            #           "\t(6) - power.\n" \
+            #           "\t(7) - whole division.\n" \
+            #           "\t(8) - remainder.\n" \
+            #           "\t(9) - square root.\n" \
+            #           "\t(10) - And Or But Explanation\n" \
+            #           "\t(0) - Exit\n"
+            #
+            # separation = ("=" * 69 + "\n\n")
 
         if choice_of_conversion == '1':
             controller = 0
