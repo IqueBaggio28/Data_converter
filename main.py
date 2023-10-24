@@ -211,20 +211,6 @@ This is the main function and it runs the entire program.
         except TypeError:
             print("Invalid value. Try again.")
 
-            # intro = "\t*** Program Menu ***\n"
-            # catalog = "\t(1) - addition.\n" \
-            #           "\t(2) - subtraction.\n" \
-            #           "\t(3) - multiplication.\n" \
-            #           "\t(4) - division.\n" \
-            #           "\t(5) - percentage.\n" \
-            #           "\t(6) - power.\n" \
-            #           "\t(7) - whole division.\n" \
-            #           "\t(8) - remainder.\n" \
-            #           "\t(9) - square root.\n" \
-            #           "\t(10) - And Or But Explanation\n" \
-            #           "\t(0) - Exit\n"
-            #
-            # separation = ("=" * 69 + "\n\n")
 
         if choice_of_conversion == '1':
             controller = 0
